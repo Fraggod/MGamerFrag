@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="refer bypass script. task bypass script">
+    <meta name="author" content="zyden">
+    <meta name="keywords" content="refer, bypass, script, money, adder, loot, paytm, cashback, cash, task">
+    <link href="../../icon/logo.png" rel="icon" type="image/x-icon" />
+    <title>mGamer Script</title>
+</head>
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
+    @import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+    /* BASIC */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    :root {
+        --main-color: rgba(90, 32, 212, 1);
+        --shadow-color: rgba(90, 32, 212, 0.4);
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(45deg, var(--main-color) 45%, #ffffff 0%);
+        background-repeat: no-repeat;
+    }
+
+    /* STRUCTURE  */
+
+    .wrapper {
+        width: 100%;
+        min-height: 100%;
+        padding: 80px 20px 20px 20px;
+    }
+
+    /* ANIMATIONS */
+
+    /* Simple CSS3 Fade-in-down Animation */
+
+    .fadeInDown {
+        animation-name: fadeInDown;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+        }
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    #formContent {
+        border-radius: 10px;
+        background: #fff;
+        width: 95%;
+        max-width: 400px;
+        min-height: 350px;
+        max-height: 500px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    #navbarId {
+        text-align: center;
+    }
+
+    img {
+        width: 25%;
+        margin: 20px auto 5px auto;
+        padding-top: 30px;
+        display: block;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 0.4px;
+        margin: 5px 8px 20px 8px;
+        color: #636e72;
+        border-bottom: 1px solid #636e72;
+    }
+
+    input[type=text],
+    select {
+        background-color: #f6f6f6;
+        border: none;
+        color: #0d0d0d;
+        padding: 12px 32px;
+        text-align: left;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        margin: 5px auto;
+        width: 85%;
+        border: 2px solid #f6f6f6;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    input[type=text]:focus {
+        background-color: #fff;
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    input[type=text]:placeholder {
+        color: #cccccc;
+    }
+
+    /* FORM TYPOGRAPHY*/
+
+    input[type=button],
+    input[type=submit],
+    input[type=reset] {
+        background-color: var(--main-color);
+        border: none;
+        color: white;
+        letter-spacing: 1px;
+        padding: 12px 80px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-size: 13px;
+        -webkit-box-shadow: 0 10px 30px 0 var(--shadow-color);
+        box-shadow: 0 10px 30px 0 var(--shadow-color);
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        margin: 5px auto 30px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    input[type=button]:hover,
+    input[type=submit]:hover,
+    input[type=reset]:hover {
+        background-color: var(--main-color);
+    }
+
+    input[type=button]:active,
+    input[type=submit]:active,
+    input[type=reset]:active {
+        -moz-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+
+    /* Simple CSS3 Fade-in Animation */
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .fadeIn {
+        opacity: 0;
+        -webkit-animation: fadeIn ease-in 1;
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+
+    .fadeIn.first {
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
+    .fadeIn.second {
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+
+    .fadeIn.third {
+        -webkit-animation-delay: 0.8s;
+        -moz-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+    }
+
+    .fadeIn.fourth {
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        animation-delay: 1s;
+    }
+
+    #formFooter {
+        background-color: #f6f6f6;
+        border-top: 1px solid #dce8f1;
+        padding: 25px;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    a {
+        color: var(--main-color);
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    /* Simple CSS3 Fade-in Animation */
+
+    .underlineHover:after {
+        display: block;
+        left: 0;
+        bottom: -10px;
+        width: 0;
+        height: 2px;
+        background-color: var(--main-color);
+        content: "";
+        transition: width 0.2s;
+    }
+
+    .underlineHover:hover {
+        color: #0d0d0d;
+    }
+
+    .underlineHover:hover:after {
+        width: 100%;
+    }
+
+    .small_text_msg {
+        margin: 0px 0px 10px 25px;
+        color: #636e72;
+        font-size: 12px;
+        display: block;
+        text-align: left;
+    }
+
+    .BoxContent {
+        background-color: #f6f6f6;
+        width: 85%;
+        min-height: 30px;
+        padding: 15px;
+        margin: 5px auto 20px auto;
+        border-radius: 5px;
+    }
+
+    .BoxContent p {
+        padding: 10px 0px;
+        border-top: thin solid #ffffff;
+        text-align: center;
+        font-size: 12px;
+        color: #636e72;
+        font-family: 'Solway', serif;
+        /*font-family: 'Bree Serif', serif;*/
+    }
+
+    pre {
+        font-size: 13px;
+    }
+
+    #form2,
+    #form3,
+    #form4 {
+        display: none;
+    }
+
+    button {
+        border: none;
+        background: transparent;
+        border-radius: 5px;
+        padding: 3px;
+        font-size: 10px;
+        font-weight: normal;
+        text-align: center;
+        display: block;
+        margin: 0px auto;
+        letter-spacing: 0.25px;
+        color: rgba(231, 76, 60, 1.0);
+        cursor: pointer;
+        font-family: 'Bree Serif', serif;
+    }
+
+    /*---------------*/
+
+    .alfa-btn-1 {
+        margin: 0px 0px 0px 18%;
+        display: inline;
+    }
+
+    .alfa-btn-2 {
+        /*margin: 0px 20px 0px 0px;*/
+        display: inline;
+    }
+</style>
+
+<body onload="redirectform()">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="fadeIn first" id="navbarId">
+                <img src="../../icon/mgamer.png" alt="Icon">
+                <h2 class="active">MGAMER PANEL SCRIPT</h2>
+            </div>
+
+
+            <form action='' id='form1' method='get' accept-charset='utf-8'>
+
+                <input type='text' class='fadeIn second' name='mobile' autocomplete='off' placeholder='Email Id' required>
+                <input type='text' class='fadeIn third' name='refer' autocomplete='off' placeholder='Password' required>
+
+                <input type='hidden' name='secretkey' value='111111'>
+
+                <input type='submit' class='fadeIn fourth' name='submit' value='CONTINUE'>
+                <button type='button' class='alfa-btn-1' onclick='formchoice1()'>Login Via Facebook ?</button>|
+                <button type='button' class='alfa-btn-2' onclick='formchoice5()'>Reset Password?</button>
+
+            </form>
+
+            <form action='' id='form2' method='get' accept-charset='utf-8'>
+                <small class='small_text_msg fadeIn second'>Enter Facebook Token!</small>
+
+                <input type='text' class='fadeIn third' name='fbtoken' autocomplete='off' placeholder='Enter Token' required>
+
+                <input type='hidden' name='secretkey' value='222222'>
+
+                <input type='submit' class='fadeIn fourth' name='submit' value='CONTINUE'>
+                <button type='button' style='color: #5f27cd;' onclick='formchoice2()'>Login Via Mobile ?</button>
+
+            </form>
+
+            <form action='trucaller.php' id='form3' method='get' accept-charset='utf-8'>
+                <small class='small_text_msg fadeIn second'>Enter Your Registerd Number!</small>
+
+                <input type='text' class='fadeIn third' name='mobile' autocomplete='off' placeholder='Mobile Number' required>
+
+
+                <input type='submit' class='fadeIn fourth' name='submit' value='CONTINUE'>
+                <button type='button' style='color: #0984e3;' onclick='formchoice3()'>Login Via Gmail Id ?</button>
+
+            </form>
+
+
+            <form action='reset.php' id='form4' method='get' accept-charset='utf-8'>
+                <small class='small_text_msg fadeIn second'>Reset Email Id Password!</small>
+
+                <input type='text' class='fadeIn third' name='rsemail' autocomplete='off' placeholder='Email Id' required>
+
+                <input type='submit' class='fadeIn fourth' name='submit' value='CONTINUE'>
+                <button type='button' style='color: #ffa801;' onclick='formchoice3()'>Go Back To Login Page?</button>
+
+            </form>
+            <div id="formFooter">
+                <a class="underlineHover" href="https://telegram.dog/zyden_official">Join Our Telegram?</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function formchoice1() {
+        document.getElementById('form1').style.display = "none";
+        document.getElementById('form2').style.display = "block";
+        document.getElementById('form3').style.display = "none";
+        document.getElementById('form4').style.display = "none";
+    }
+
+    function formchoice2() {
+        document.getElementById('form2').style.display = "none";
+        document.getElementById('form1').style.display = "none";
+        document.getElementById('form3').style.display = "block";
+        document.getElementById('form4').style.display = "none";
+
+    }
+
+    function formchoice3() {
+        document.getElementById('form2').style.display = "none";
+        document.getElementById('form1').style.display = "block";
+        document.getElementById('form3').style.display = "none";
+        document.getElementById('form4').style.display = "none";
+
+    }
+
+    function formchoice5() {
+        document.getElementById('form2').style.display = "none";
+        document.getElementById('form1').style.display = "none";
+        document.getElementById('form3').style.display = "none";
+        document.getElementById('form4').style.display = "block";
+
+    }
+
+    function redirectform() {
+        document.getElementById('formred').submit();
+    }
+
+    function myFunctionLoad() {
+        document.getElementById('formredirect').submit();
+    }
+
+    setTimeout('myFunctionLoad()', 8000);
+
+
+    var timeLeft = 8;
+    var elem = document.getElementById('Timer');
+
+    var timerId = setInterval(countdown, 1000);
+
+
+
+    function countdown() {
+        if (timeLeft == 0) {
+            clearTimeout(timerId);
+            doSomething();
+        } else {
+            elem.innerHTML = timeLeft;
+            timeLeft--;
+        }
+    }
+</script>
+
+</html>
